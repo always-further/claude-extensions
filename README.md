@@ -12,7 +12,6 @@
   <a href="https://github.com/always-further/claude-extensions/actions/workflows/validate.yml"><img src="https://github.com/always-further/claude-extensions/actions/workflows/validate.yml/badge.svg" alt="Validate"></a>
   <a href="https://github.com/always-further/claude-extensions/actions/workflows/security.yml"><img src="https://github.com/always-further/claude-extensions/actions/workflows/security.yml/badge.svg" alt="Security"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a>
-  <a href="https://github.com/always-further/claude-extensions/stargazers"><img src="https://img.shields.io/github/stars/always-further/claude-extensions?style=social" alt="GitHub Stars"></a>
 </p>
 
 <p align="center">
