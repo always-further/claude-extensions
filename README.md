@@ -1,4 +1,10 @@
+<p align="center">
+  <img src="assets/claude.png" alt="Claude - Always Further!" width="400">
+</p>
+
 # Claude Code Always Further Extensions
+
+[![CI](https://github.com/always-further/claude-extensions/actions/workflows/ci.yml/badge.svg)](https://github.com/always-further/claude-extensions/actions/workflows/ci.yml)
 
 A collection of skills, agents, hooks, commands, and MCP configurations for Claude Code and Claude Desktop. Clone this repository and run the installation.
 
