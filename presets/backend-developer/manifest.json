@@ -1,0 +1,28 @@
+{
+  "name": "backend-developer",
+  "description": "Backend-focused tools and agents",
+  "skills": [
+    "git-workflow",
+    "code-review",
+    "testing-assistant",
+    "security-auditor",
+    "api-designer",
+    "database-assistant"
+  ],
+  "agents": [
+    "commit-message-writer",
+    "pr-reviewer",
+    "debug-assistant",
+    "migration-assistant"
+  ],
+  "hooks": [
+    "lint-check",
+    "pre-commit-check"
+  ],
+  "commands": [
+    "dependency-audit",
+    "project-summary",
+    "tech-debt"
+  ],
+  "mcp": ["data-science"]
+}

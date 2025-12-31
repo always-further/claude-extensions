@@ -1,0 +1,39 @@
+{
+  "name": "full",
+  "description": "Everything in this repository",
+  "skills": [
+    "git-workflow",
+    "code-review",
+    "testing-assistant",
+    "documentation-writer",
+    "security-auditor",
+    "performance-optimizer",
+    "api-designer",
+    "database-assistant"
+  ],
+  "agents": [
+    "commit-message-writer",
+    "pr-reviewer",
+    "architecture-reviewer",
+    "debug-assistant",
+    "refactor-planner",
+    "dependency-manager",
+    "migration-assistant",
+    "release-manager"
+  ],
+  "hooks": [
+    "auto-format",
+    "lint-check",
+    "notification",
+    "command-logger",
+    "pre-commit-check"
+  ],
+  "commands": [
+    "merge-conflict",
+    "dependency-audit",
+    "project-summary",
+    "tech-debt",
+    "onboarding"
+  ],
+  "mcp": ["full-stack"]
+}

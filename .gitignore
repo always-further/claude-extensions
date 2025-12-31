@@ -1,0 +1,31 @@
+# Local settings (machine-specific)
+.claude/settings.local.json
+
+# Node modules (if any scripts use npm)
+node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Logs
+*.log
+command-log.txt
+
+# Environment files with secrets
+.env
+.env.local
+.env.*.local

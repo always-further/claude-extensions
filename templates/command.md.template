@@ -1,0 +1,50 @@
+---
+description: Brief description of what this command does (shown in command list)
+arguments: Optional description of expected arguments (e.g., "PR number or URL")
+---
+
+# Command Instructions
+
+When this command is invoked, follow these steps:
+
+## Step 1: Understand Context
+
+First, gather necessary information:
+- What to look for
+- What questions to ask the user if needed
+
+## Step 2: Execute
+
+Perform the main action:
+1. Action 1
+2. Action 2
+3. Action 3
+
+## Step 3: Report Results
+
+Present findings to the user:
+- Format for output
+- What to include
+
+## Arguments
+
+If arguments are provided via `$ARGUMENTS`:
+- Parse and validate the input
+- Use the argument value appropriately
+
+Example usage:
+- `/command-name` - Run with defaults
+- `/command-name arg1` - Run with argument
+
+## Output Format
+
+Structure your response as:
+
+### Summary
+[Brief overview of what was done]
+
+### Results
+[Detailed results]
+
+### Next Steps
+[Recommended follow-up actions]

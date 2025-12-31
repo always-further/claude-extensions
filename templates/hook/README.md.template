@@ -1,0 +1,95 @@
+# Hook Name
+
+## Overview
+
+Brief description of what this hook does.
+
+## Security Disclosure
+
+**Security Level:** LOW | MEDIUM | HIGH
+
+**Commands executed:**
+```bash
+# List every command that will be executed
+your-command-here "$variable"
+```
+
+**Trigger conditions:** When this hook runs (e.g., "After Claude edits TypeScript files")
+
+**File access:**
+- Reads: [What files are read]
+- Writes: [What files are written]
+
+**Network access:** [None | Description of network requests]
+
+**Risk assessment:**
+This hook is classified as [LOW/MEDIUM/HIGH] risk because:
+- Reason 1
+- Reason 2
+
+## Configuration
+
+Add to your `.claude/settings.json`:
+
+```json
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "your-command-here"
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+## Hook Events
+
+This hook uses the following event(s):
+- **PostToolUse**: Runs after Claude uses a tool
+- Matcher: `Edit|Write` (regex pattern)
+
+## Requirements
+
+- Dependency 1 (e.g., `npm install -g prettier`)
+- Dependency 2
+
+## Customization
+
+### Changing file types
+
+Edit the matcher regex to target different files:
+- TypeScript/JavaScript: `Edit|Write` with file extension check
+- Python: Modify command to use `black` instead
+
+### Environment variables
+
+- `VARIABLE_NAME`: Description of what it controls
+
+## Troubleshooting
+
+### Hook not running
+
+1. Check that dependencies are installed
+2. Verify settings.json syntax
+3. Restart Claude Code
+
+### Command fails
+
+1. Test command manually in terminal
+2. Check file permissions
+3. Verify PATH includes required tools
+
+## Author
+
+Contributed by @username
+
+## Version History
+
+- 1.0.0: Initial release

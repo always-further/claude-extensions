@@ -1,0 +1,55 @@
+# Skill Name
+
+## Overview
+
+Brief description of what this skill does and when it's useful.
+
+## Activation Triggers
+
+This skill activates when you:
+- Ask about [topic]
+- Request help with [task]
+- Need assistance with [area]
+
+Example prompts:
+- "Help me [do something]"
+- "How do I [accomplish task]?"
+- "Can you [perform action]?"
+
+## Capabilities
+
+- **Capability 1**: Description
+- **Capability 2**: Description
+- **Capability 3**: Description
+
+## Example Usage
+
+### Example 1: [Scenario]
+
+**User**: "Your example prompt here"
+
+**Claude**: [Description of how Claude responds when skill is active]
+
+### Example 2: [Another Scenario]
+
+**User**: "Another example prompt"
+
+**Claude**: [Description of response]
+
+## Requirements
+
+- Requirement 1 (e.g., specific tools installed)
+- Requirement 2 (e.g., certain file types present)
+
+## Limitations
+
+- What this skill does NOT do
+- Edge cases to be aware of
+
+## Author
+
+Contributed by @username
+
+## Version History
+
+- 1.0.0: Initial release

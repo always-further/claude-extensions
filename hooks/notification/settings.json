@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if [[ \"$OSTYPE\" == \"darwin\"* ]]; then osascript -e 'display notification \"Claude has completed the task\" with title \"Claude Code\" sound name \"Glass\"'; elif command -v notify-send &> /dev/null; then notify-send 'Claude Code' 'Claude has completed the task'; fi"
+          }
+        ]
+      }
+    ]
+  }
+}

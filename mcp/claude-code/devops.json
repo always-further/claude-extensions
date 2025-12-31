@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "github": {
+      "command": "npx",
+      "args": ["@anthropic/mcp-server-github"],
+      "env": {
+        "GITHUB_TOKEN": "${GITHUB_TOKEN}"
+      }
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": ["@anthropic/mcp-server-filesystem", "."]
+    },
+    "fetch": {
+      "command": "npx",
+      "args": ["@anthropic/mcp-server-fetch"]
+    },
+    "memory": {
+      "command": "npx",
+      "args": ["@anthropic/mcp-server-memory"]
+    }
+  }
+}

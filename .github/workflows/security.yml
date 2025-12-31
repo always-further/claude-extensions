@@ -1,0 +1,75 @@
+name: Security Review
+
+on:
+  pull_request:
+    paths:
+      - 'hooks/**'
+
+jobs:
+  security-review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check for security disclosure
+        run: |
+          for hook_dir in hooks/*/; do
+            if [[ -d "$hook_dir" ]]; then
+              hook_name=$(basename "$hook_dir")
+              readme="$hook_dir/README.md"
+
+              if [[ ! -f "$readme" ]]; then
+                echo "ERROR: Missing README.md in $hook_dir"
+                exit 1
+              fi
+
+              # Check for security disclosure section
+              if ! grep -qi "security" "$readme"; then
+                echo "ERROR: Missing security disclosure in $readme"
+                exit 1
+              fi
+
+              # Check for security level
+              if ! grep -qiE "security level.*:(LOW|MEDIUM|HIGH)" "$readme"; then
+                echo "ERROR: Missing security level in $readme"
+                exit 1
+              fi
+
+              echo "OK: $hook_name has security disclosure"
+            fi
+          done
+
+      - name: Check for dangerous patterns
+        run: |
+          # Check for potentially dangerous patterns in hook settings
+          for settings in hooks/*/settings.json; do
+            if [[ -f "$settings" ]]; then
+              # Check for eval
+              if grep -q "eval " "$settings"; then
+                echo "WARNING: Found 'eval' in $settings - requires manual review"
+              fi
+
+              # Check for curl with variables
+              if grep -qE "curl.*\\\$" "$settings"; then
+                echo "WARNING: Found curl with variables in $settings - requires manual review"
+              fi
+
+              # Check for rm -rf
+              if grep -q "rm -rf" "$settings"; then
+                echo "WARNING: Found 'rm -rf' in $settings - requires manual review"
+              fi
+            fi
+          done
+
+      - name: Add security review label
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.addLabels({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: ['security-review-required']
+            })

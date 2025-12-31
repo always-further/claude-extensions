@@ -1,0 +1,22 @@
+{
+  "name": "devops-engineer",
+  "description": "DevOps-focused tools and MCP servers",
+  "skills": [
+    "git-workflow",
+    "security-auditor"
+  ],
+  "agents": [
+    "commit-message-writer",
+    "release-manager",
+    "dependency-manager"
+  ],
+  "hooks": [
+    "command-logger",
+    "notification"
+  ],
+  "commands": [
+    "dependency-audit",
+    "project-summary"
+  ],
+  "mcp": ["devops"]
+}

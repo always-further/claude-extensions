@@ -1,0 +1,373 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-01-01",
+  "components": {
+    "skills": [
+      {
+        "id": "git-workflow",
+        "name": "Git Workflow",
+        "description": "Git operations, rebasing, conflict resolution",
+        "path": "skills/git-workflow",
+        "tags": ["git", "version-control", "workflow"],
+        "version": "1.0.0"
+      },
+      {
+        "id": "code-review",
+        "name": "Code Review",
+        "description": "Code review assistance with quality checklists",
+        "path": "skills/code-review",
+        "tags": ["review", "quality", "best-practices"],
+        "version": "1.0.0"
+      },
+      {
+        "id": "testing-assistant",
+        "name": "Testing Assistant",
+        "description": "Test writing for multiple frameworks",
+        "path": "skills/testing-assistant",
+        "tags": ["testing", "jest", "pytest", "tdd"],
+        "version": "1.0.0"
+      },
+      {
+        "id": "documentation-writer",
+        "name": "Documentation Writer",
+        "description": "README, API docs, code comments",
+        "path": "skills/documentation-writer",
+        "tags": ["documentation", "readme", "jsdoc"],
+        "version": "1.0.0"
+      },
+      {
+        "id": "security-auditor",
+        "name": "Security Auditor",
+        "description": "Security review and vulnerability scanning",
+        "path": "skills/security-auditor",
+        "tags": ["security", "owasp", "vulnerabilities"],
+        "version": "1.0.0"
+      },
+      {
+        "id": "performance-optimizer",
+        "name": "Performance Optimizer",
+        "description": "Performance analysis and optimization",
+        "path": "skills/performance-optimizer",
+        "tags": ["performance", "optimization", "profiling"],
+        "version": "1.0.0"
+      },
+      {
+        "id": "api-designer",
+        "name": "API Designer",
+        "description": "REST and GraphQL API design",
+        "path": "skills/api-designer",
+        "tags": ["api", "rest", "graphql"],
+        "version": "1.0.0"
+      },
+      {
+        "id": "database-assistant",
+        "name": "Database Assistant",
+        "description": "Schema design, queries, migrations",
+        "path": "skills/database-assistant",
+        "tags": ["database", "sql", "orm", "migrations"],
+        "version": "1.0.0"
+      }
+    ],
+    "agents": [
+      {
+        "id": "commit-message-writer",
+        "name": "Commit Message Writer",
+        "description": "Generate conventional commit messages",
+        "path": "agents/commit-message-writer.md",
+        "model": "haiku",
+        "tags": ["git", "commits"],
+        "version": "1.0.0"
+      },
+      {
+        "id": "pr-reviewer",
+        "name": "PR Reviewer",
+        "description": "Review pull requests",
+        "path": "agents/pr-reviewer.md",
+        "model": "sonnet",
+        "tags": ["git", "code-review", "pull-request"],
+        "version": "1.0.0"
+      },
+      {
+        "id": "architecture-reviewer",
+        "name": "Architecture Reviewer",
+        "description": "Analyze codebase architecture",
+        "path": "agents/architecture-reviewer.md",
+        "model": "sonnet",
+        "tags": ["architecture", "design", "patterns"],
+        "version": "1.0.0"
+      },
+      {
+        "id": "debug-assistant",
+        "name": "Debug Assistant",
+        "description": "Systematic debugging assistance",
+        "path": "agents/debug-assistant.md",
+        "model": "sonnet",
+        "tags": ["debugging", "troubleshooting"],
+        "version": "1.0.0"
+      },
+      {
+        "id": "refactor-planner",
+        "name": "Refactor Planner",
+        "description": "Plan refactoring strategies",
+        "path": "agents/refactor-planner.md",
+        "model": "sonnet",
+        "tags": ["refactoring", "code-quality"],
+        "version": "1.0.0"
+      },
+      {
+        "id": "dependency-manager",
+        "name": "Dependency Manager",
+        "description": "Manage and audit dependencies",
+        "path": "agents/dependency-manager.md",
+        "model": "haiku",
+        "tags": ["dependencies", "security", "npm", "pip"],
+        "version": "1.0.0"
+      },
+      {
+        "id": "migration-assistant",
+        "name": "Migration Assistant",
+        "description": "Plan database/framework migrations",
+        "path": "agents/migration-assistant.md",
+        "model": "sonnet",
+        "tags": ["migrations", "database", "upgrades"],
+        "version": "1.0.0"
+      },
+      {
+        "id": "release-manager",
+        "name": "Release Manager",
+        "description": "Manage releases and changelogs",
+        "path": "agents/release-manager.md",
+        "model": "haiku",
+        "tags": ["releases", "changelog", "versioning"],
+        "version": "1.0.0"
+      }
+    ],
+    "hooks": [
+      {
+        "id": "auto-format",
+        "name": "Auto Format",
+        "description": "Format code after edits",
+        "path": "hooks/auto-format",
+        "securityLevel": "LOW",
+        "tags": ["formatting", "prettier", "black"],
+        "version": "1.0.0"
+      },
+      {
+        "id": "lint-check",
+        "name": "Lint Check",
+        "description": "Run linter after edits",
+        "path": "hooks/lint-check",
+        "securityLevel": "LOW",
+        "tags": ["linting", "eslint", "ruff"],
+        "version": "1.0.0"
+      },
+      {
+        "id": "notification",
+        "name": "Notification",
+        "description": "Desktop notifications on completion",
+        "path": "hooks/notification",
+        "securityLevel": "LOW",
+        "tags": ["notifications", "alerts"],
+        "version": "1.0.0"
+      },
+      {
+        "id": "command-logger",
+        "name": "Command Logger",
+        "description": "Log bash commands for audit",
+        "path": "hooks/command-logger",
+        "securityLevel": "LOW",
+        "tags": ["logging", "audit"],
+        "version": "1.0.0"
+      },
+      {
+        "id": "pre-commit-check",
+        "name": "Pre-Commit Check",
+        "description": "Validate before commits",
+        "path": "hooks/pre-commit-check",
+        "securityLevel": "MEDIUM",
+        "tags": ["git", "validation", "testing"],
+        "version": "1.0.0"
+      }
+    ],
+    "commands": [
+      {
+        "id": "merge-conflict",
+        "name": "Merge Conflict",
+        "description": "Interactive merge conflict resolution",
+        "path": "commands/merge-conflict.md",
+        "tags": ["git", "conflicts"],
+        "version": "1.0.0"
+      },
+      {
+        "id": "dependency-audit",
+        "name": "Dependency Audit",
+        "description": "Audit dependencies for security and updates",
+        "path": "commands/dependency-audit.md",
+        "tags": ["dependencies", "security"],
+        "version": "1.0.0"
+      },
+      {
+        "id": "project-summary",
+        "name": "Project Summary",
+        "description": "Generate project overview",
+        "path": "commands/project-summary.md",
+        "tags": ["documentation", "overview"],
+        "version": "1.0.0"
+      },
+      {
+        "id": "tech-debt",
+        "name": "Tech Debt",
+        "description": "Identify technical debt",
+        "path": "commands/tech-debt.md",
+        "tags": ["quality", "maintenance"],
+        "version": "1.0.0"
+      },
+      {
+        "id": "onboarding",
+        "name": "Onboarding",
+        "description": "Generate developer onboarding guide",
+        "path": "commands/onboarding.md",
+        "tags": ["documentation", "onboarding"],
+        "version": "1.0.0"
+      }
+    ],
+    "mcp": {
+      "claude-code": [
+        {
+          "id": "web-dev",
+          "name": "Web Development",
+          "description": "Playwright, GitHub, Puppeteer",
+          "path": "mcp/claude-code/web-dev.json",
+          "servers": ["playwright", "github", "puppeteer", "fetch"],
+          "version": "1.0.0"
+        },
+        {
+          "id": "data-science",
+          "name": "Data Science",
+          "description": "Database connectors and file access",
+          "path": "mcp/claude-code/data-science.json",
+          "servers": ["filesystem", "sqlite", "postgres", "fetch"],
+          "version": "1.0.0"
+        },
+        {
+          "id": "devops",
+          "name": "DevOps",
+          "description": "GitHub, filesystem, and utilities",
+          "path": "mcp/claude-code/devops.json",
+          "servers": ["github", "filesystem", "fetch", "memory"],
+          "version": "1.0.0"
+        },
+        {
+          "id": "security",
+          "name": "Security",
+          "description": "Security-focused server configuration",
+          "path": "mcp/claude-code/security.json",
+          "servers": ["github", "filesystem", "fetch"],
+          "version": "1.0.0"
+        },
+        {
+          "id": "full-stack",
+          "name": "Full Stack",
+          "description": "Comprehensive development setup",
+          "path": "mcp/claude-code/full-stack.json",
+          "servers": ["playwright", "github", "puppeteer", "fetch", "filesystem", "memory", "sqlite"],
+          "version": "1.0.0"
+        }
+      ],
+      "claude-desktop": [
+        {
+          "id": "productivity",
+          "name": "Productivity",
+          "description": "File management and memory",
+          "path": "mcp/claude-desktop/productivity.json",
+          "servers": ["filesystem", "memory", "fetch"],
+          "version": "1.0.0"
+        },
+        {
+          "id": "research",
+          "name": "Research",
+          "description": "Web search and document processing",
+          "path": "mcp/claude-desktop/research.json",
+          "servers": ["brave-search", "fetch", "memory", "filesystem"],
+          "version": "1.0.0"
+        },
+        {
+          "id": "development",
+          "name": "Development",
+          "description": "GitHub and code access",
+          "path": "mcp/claude-desktop/development.json",
+          "servers": ["github", "filesystem", "fetch", "memory"],
+          "version": "1.0.0"
+        },
+        {
+          "id": "communication",
+          "name": "Communication",
+          "description": "Slack and messaging",
+          "path": "mcp/claude-desktop/communication.json",
+          "servers": ["slack", "fetch", "memory"],
+          "version": "1.0.0"
+        },
+        {
+          "id": "data-analysis",
+          "name": "Data Analysis",
+          "description": "Database and file analysis",
+          "path": "mcp/claude-desktop/data-analysis.json",
+          "servers": ["sqlite", "filesystem", "fetch", "memory"],
+          "version": "1.0.0"
+        }
+      ]
+    }
+  },
+  "presets": [
+    {
+      "id": "minimal",
+      "name": "Minimal",
+      "description": "Essential components for any developer",
+      "skills": ["git-workflow", "code-review"],
+      "agents": ["commit-message-writer", "debug-assistant"],
+      "hooks": [],
+      "commands": ["project-summary"],
+      "mcp": []
+    },
+    {
+      "id": "full",
+      "name": "Full",
+      "description": "Everything in this repository",
+      "skills": ["git-workflow", "code-review", "testing-assistant", "documentation-writer", "security-auditor", "performance-optimizer", "api-designer", "database-assistant"],
+      "agents": ["commit-message-writer", "pr-reviewer", "architecture-reviewer", "debug-assistant", "refactor-planner", "dependency-manager", "migration-assistant", "release-manager"],
+      "hooks": ["auto-format", "lint-check", "notification", "command-logger", "pre-commit-check"],
+      "commands": ["merge-conflict", "dependency-audit", "project-summary", "tech-debt", "onboarding"],
+      "mcp": ["full-stack"]
+    },
+    {
+      "id": "backend-developer",
+      "name": "Backend Developer",
+      "description": "Backend-focused tools and agents",
+      "skills": ["git-workflow", "code-review", "testing-assistant", "security-auditor", "api-designer", "database-assistant"],
+      "agents": ["commit-message-writer", "pr-reviewer", "debug-assistant", "migration-assistant"],
+      "hooks": ["lint-check", "pre-commit-check"],
+      "commands": ["dependency-audit", "project-summary", "tech-debt"],
+      "mcp": ["data-science"]
+    },
+    {
+      "id": "frontend-developer",
+      "name": "Frontend Developer",
+      "description": "Frontend-focused tools and agents",
+      "skills": ["git-workflow", "code-review", "testing-assistant", "performance-optimizer"],
+      "agents": ["commit-message-writer", "pr-reviewer", "debug-assistant"],
+      "hooks": ["auto-format", "lint-check"],
+      "commands": ["dependency-audit", "project-summary"],
+      "mcp": ["web-dev"]
+    },
+    {
+      "id": "devops-engineer",
+      "name": "DevOps Engineer",
+      "description": "DevOps-focused tools and MCP servers",
+      "skills": ["git-workflow", "security-auditor"],
+      "agents": ["commit-message-writer", "release-manager", "dependency-manager"],
+      "hooks": ["command-logger", "notification"],
+      "commands": ["dependency-audit", "project-summary"],
+      "mcp": ["devops"]
+    }
+  ]
+}

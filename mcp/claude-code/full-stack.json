@@ -1,0 +1,35 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["@anthropic/mcp-server-playwright"]
+    },
+    "github": {
+      "command": "npx",
+      "args": ["@anthropic/mcp-server-github"],
+      "env": {
+        "GITHUB_TOKEN": "${GITHUB_TOKEN}"
+      }
+    },
+    "puppeteer": {
+      "command": "npx",
+      "args": ["@anthropic/mcp-server-puppeteer"]
+    },
+    "fetch": {
+      "command": "npx",
+      "args": ["@anthropic/mcp-server-fetch"]
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": ["@anthropic/mcp-server-filesystem", "."]
+    },
+    "memory": {
+      "command": "npx",
+      "args": ["@anthropic/mcp-server-memory"]
+    },
+    "sqlite": {
+      "command": "npx",
+      "args": ["@anthropic/mcp-server-sqlite", "--db", "${SQLITE_DB_PATH:-./data.db}"]
+    }
+  }
+}

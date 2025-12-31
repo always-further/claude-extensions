@@ -1,0 +1,24 @@
+{
+  "name": "frontend-developer",
+  "description": "Frontend-focused tools and agents",
+  "skills": [
+    "git-workflow",
+    "code-review",
+    "testing-assistant",
+    "performance-optimizer"
+  ],
+  "agents": [
+    "commit-message-writer",
+    "pr-reviewer",
+    "debug-assistant"
+  ],
+  "hooks": [
+    "auto-format",
+    "lint-check"
+  ],
+  "commands": [
+    "dependency-audit",
+    "project-summary"
+  ],
+  "mcp": ["web-dev"]
+}

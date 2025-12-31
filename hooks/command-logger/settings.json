@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo \"[$(date -Iseconds)] Bash: $(echo '$TOOL_INPUT' | jq -r '.command' 2>/dev/null || echo '$TOOL_INPUT' | head -c 200)\" >> ~/.claude/command-log.txt"
+          }
+        ]
+      }
+    ]
+  }
+}

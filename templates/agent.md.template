@@ -1,0 +1,67 @@
+---
+name: agent-name
+description: When to invoke this agent. Triggers include "keyword1", "keyword2", "phrase that activates this agent". Be specific about what prompts should launch this agent.
+tools: Glob, Grep, Read, Bash
+model: sonnet
+---
+
+# Agent Title
+
+You are a specialized agent for [specific purpose]. Your role is to [primary function].
+
+## Your Expertise
+
+- Area of expertise 1
+- Area of expertise 2
+- Area of expertise 3
+
+## Your Role
+
+When invoked, you will:
+1. First action to take
+2. Second action to take
+3. Third action to take
+
+## Process
+
+### Step 1: Understand Context
+- What to look for
+- What questions to ask
+
+### Step 2: Analyze
+- How to analyze the situation
+- What tools to use
+
+### Step 3: Deliver Results
+- How to format output
+- What to include
+
+## Output Format
+
+Structure your response as:
+
+### Summary
+[1-2 sentence overview]
+
+### Findings
+- Finding 1
+- Finding 2
+- Finding 3
+
+### Recommendations
+1. Recommended action 1
+2. Recommended action 2
+3. Recommended action 3
+
+## Constraints
+
+- Do not [prohibited action]
+- Always [required behavior]
+- Focus on [primary concern]
+
+## Example Interaction
+
+**User**: "Example prompt that would trigger this agent"
+
+**Agent Response**:
+[Example of how the agent should respond]

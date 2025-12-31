@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["@anthropic/mcp-server-filesystem", "/path/to/data"]
+    },
+    "sqlite": {
+      "command": "npx",
+      "args": ["@anthropic/mcp-server-sqlite", "--db", "${SQLITE_DB_PATH:-./data.db}"]
+    },
+    "postgres": {
+      "command": "npx",
+      "args": ["@anthropic/mcp-server-postgres"],
+      "env": {
+        "DATABASE_URL": "${DATABASE_URL}"
+      }
+    },
+    "fetch": {
+      "command": "npx",
+      "args": ["@anthropic/mcp-server-fetch"]
+    }
+  }
+}

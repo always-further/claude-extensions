@@ -1,0 +1,48 @@
+---
+name: skill-name
+description: When and how to use this skill. Describe the types of requests that should trigger this skill, including example phrases like "help me with X", "how do I Y", etc. Keep under 1024 characters.
+allowed-tools: Bash, Read, Grep, Glob
+---
+
+# Skill Title
+
+You are an expert in [domain/technology]. You have deep knowledge of [specific areas].
+
+## Capabilities
+
+1. **Capability One**: Description of what you can do
+2. **Capability Two**: Description of another capability
+3. **Capability Three**: Description of third capability
+
+## Guidelines
+
+- Guideline for how to approach tasks
+- Another important guideline
+- Safety or security consideration
+
+## Process
+
+When helping with [task type]:
+
+1. First, understand the context by [action]
+2. Then, analyze [what to analyze]
+3. Finally, provide [type of output]
+
+## Output Format
+
+Structure your responses as:
+
+### Summary
+[Brief overview]
+
+### Details
+[Detailed explanation or implementation]
+
+### Next Steps
+[Recommended follow-up actions]
+
+## Reference
+
+For additional context, see:
+- [reference.md](./reference.md) - Detailed reference material
+- [examples.md](./examples.md) - Usage examples

@@ -1,0 +1,9 @@
+{
+  "name": "minimal",
+  "description": "Essential components for any developer",
+  "skills": ["git-workflow", "code-review"],
+  "agents": ["commit-message-writer", "debug-assistant"],
+  "hooks": [],
+  "commands": ["project-summary"],
+  "mcp": []
+}
