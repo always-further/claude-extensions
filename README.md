@@ -8,8 +8,8 @@ Find any new hacks that you think would be useful? Feel free to contribute!
 
 ```bash
 # Clone the repository
-git clone https://github.com/always-further/skills-agents.git
-cd skills-agents
+git clone https://github.com/always-further/claude-extensions.git
+cd claude-extensions
 
 # Install everything (Claude Code + Claude Desktop)
 ./install.sh --global --target both
@@ -175,14 +175,14 @@ Role-based bundles for quick setup:
 If you installed with symlink mode (default):
 
 ```bash
-cd skills-agents
+cd claude-extensions
 git pull
 ```
 
 If you installed with copy mode:
 
 ```bash
-cd skills-agents
+cd claude-extensions
 git pull
 ./install.sh --global --mode copy --force
 ```

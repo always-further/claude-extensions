@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Claude Code Community Extensions Installer
-# https://github.com/always-further/skills-agents
+# https://github.com/always-further/claude-extensions
 #
 
 set -e
