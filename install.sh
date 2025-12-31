@@ -467,8 +467,22 @@ install_hook() {
             # Merge hook configurations
             if command -v jq &> /dev/null; then
                 local temp_file=$(mktemp)
-                jq -s '.[0] * .[1] | .hooks = (.[0].hooks // {}) * (.[1].hooks // {})' \
-                    "$target_settings" "$settings_source" > "$temp_file"
+                # Deep merge that concatenates arrays instead of replacing them
+                jq -s '
+                    def deep_merge:
+                        reduce .[] as $item ({}; . as $acc |
+                            $item | to_entries | reduce .[] as $e ($acc;
+                                if ($e.value | type) == "object" and (.[$e.key] | type) == "object" then
+                                    .[$e.key] = ([.[$e.key], $e.value] | deep_merge)
+                                elif ($e.value | type) == "array" and (.[$e.key] | type) == "array" then
+                                    .[$e.key] = (.[$e.key] + $e.value)
+                                else
+                                    .[$e.key] = $e.value
+                                end
+                            )
+                        );
+                    deep_merge
+                ' "$target_settings" "$settings_source" > "$temp_file"
                 mv "$temp_file" "$target_settings"
             else
                 echo -e "${YELLOW}Warning: jq not found, cannot merge settings. Manual merge required.${NC}"

@@ -18,7 +18,8 @@
   <a href="#quick-start">Quick Start</a> |
   <a href="#components">Components</a> |
   <a href="#presets">Presets</a> |
-  <a href="#contributing">Contributing</a>
+  <a href="#contributing">Contributing</a> |
+  <a href="docs/USER_GUIDE.md"><strong>User Guide</strong></a>
 </p>
 
 ---
@@ -238,7 +239,7 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ## Links
 
-- [Claude Code Documentation](https://code.claude.com/docs/en)
-- [Skills Guide](https://code.claude.com/docs/en/skills)
-- [Hooks Guide](https://code.claude.com/docs/en/hooks-guide)
-- [MCP Documentation](https://code.claude.com/docs/en/mcp)
+- [Claude Code Documentation](https://docs.anthropic.com/en/docs/claude-code)
+- [Skills Guide](https://docs.anthropic.com/en/docs/claude-code/skills)
+- [Hooks Guide](https://docs.anthropic.com/en/docs/claude-code/hooks)
+- [MCP Documentation](https://docs.anthropic.com/en/docs/claude-code/mcp)
