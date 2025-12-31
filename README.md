@@ -1,6 +1,8 @@
-# Claude Code Community Extensions
+# Claude Code Always Further Extensions
 
-A community-driven collection of skills, agents, hooks, commands, and MCP configurations for Claude Code and Claude Desktop. Clone this repository to instantly supercharge your Claude setup.
+A collection of skills, agents, hooks, commands, and MCP configurations for Claude Code and Claude Desktop. Clone this repository and run the installation.
+
+Find any new hacks that you think would be useful? Feel free to contribute!
 
 ## Quick Start
 
