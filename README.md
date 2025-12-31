@@ -2,13 +2,33 @@
   <img src="assets/claude.png" alt="Claude - Always Further!" width="400">
 </p>
 
-# Claude Code Always Further Extensions
+<h1 align="center">Claude Code Always Further Extensions</h1>
 
-[![CI](https://github.com/always-further/claude-extensions/actions/workflows/ci.yml/badge.svg)](https://github.com/always-further/claude-extensions/actions/workflows/ci.yml)
+<p align="center">
+  <strong>Supercharge your Claude Code with skills, agents, hooks, and more!</strong>
+</p>
 
-A collection of skills, agents, hooks, commands, and MCP configurations for Claude Code and Claude Desktop. Clone this repository and run the installation.
+<p align="center">
+  <a href="https://github.com/always-further/claude-extensions/actions/workflows/validate.yml"><img src="https://github.com/always-further/claude-extensions/actions/workflows/validate.yml/badge.svg" alt="Validate"></a>
+  <a href="https://github.com/always-further/claude-extensions/actions/workflows/security.yml"><img src="https://github.com/always-further/claude-extensions/actions/workflows/security.yml/badge.svg" alt="Security"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a>
+  <a href="https://github.com/always-further/claude-extensions/stargazers"><img src="https://img.shields.io/github/stars/always-further/claude-extensions?style=social" alt="GitHub Stars"></a>
+</p>
 
-Find any new hacks that you think would be useful? Feel free to contribute!
+<p align="center">
+  <a href="#quick-start">Quick Start</a> |
+  <a href="#components">Components</a> |
+  <a href="#presets">Presets</a> |
+  <a href="#contributing">Contributing</a>
+</p>
+
+---
+
+A collection of skills, agents, hooks, commands, and MCP configurations for Claude Code and Claude Desktop.
+
+**Got some cool hacks to share? Contributions welcome!**
+
+---
 
 ## Quick Start
 
@@ -24,10 +44,12 @@ cd claude-extensions
 ./install.sh --interactive
 ```
 
+---
+
 ## What's Included
 
 | Category | Count | Description |
-|----------|-------|-------------|
+|:---------|:-----:|:------------|
 | **Skills** | 8+ | Domain expertise that Claude loads on-demand |
 | **Agents** | 8+ | Specialized sub-agents for specific tasks |
 | **Hooks** | 5+ | Automated actions triggered by Claude events |
